@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_min_width_major">20dp</dimen>
+    <dimen name="padding_vertical">10dp</dimen>
+    <dimen name="padding_horizontal">10dp</dimen>
+    <dimen name="margin_button_1">5dp</dimen>
+    <dimen name="padding_2_horizontal">30dp</dimen>
+    <dimen name="padding_2_vertical">20dp</dimen>
+    <dimen name="divider_h">10dp</dimen>
+</resources>

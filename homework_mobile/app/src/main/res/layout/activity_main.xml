@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main_column_layout"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="@dimen/dialog_min_width_major"
+        android:paddingEnd="@dimen/dialog_min_width_major"
+        android:paddingVertical="@dimen/padding_vertical"
+        android:background="@color/grey"
+        android:text="@string/favorite_twitter_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_field_name1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+
+        android:autofillHints=""
+        android:hint="@string/hint_query_enter"
+        android:inputType="textPersonName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+       >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_field_name2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:paddingTop="1dp"
+            android:hint="@string/hint_name_input"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="@string/Save"
+            android:textAllCaps="false"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintLeft_toRightOf="@+id/text_field_name2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_field_name2"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/col2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        android:background="@color/color_boring"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tagged_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tag_search"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listViewExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:focusable="true" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/clear_tag_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20dp"
+        android:layout_marginBottom="@dimen/padding_horizontal"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        android:text="@string/clear_tag"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:focusable="true" />
+</LinearLayout>

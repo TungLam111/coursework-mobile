@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_inside"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/simple_title_text"
+
+            android:textColor="@color/title_text_color"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_link"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/phan_dam_tung_lam"
+            android:textColor="@color/content_text_color" />
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/design_default_color_primary"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_link"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/what_is_lorem_ipsum_lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/tv_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            tools:ignore="MissingConstraints,NotSibling,UnknownId"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

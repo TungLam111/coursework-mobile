@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">homework_mobile</string>
+    <string name="favorite_twitter_search">Favorite Twitter Search</string>
+    <string name="hint_name_input">Tag your query</string>
+    <string name="Save">Save</string>
+    <string name="hint_query_enter">Enter Twitter search query here</string>
+    <string name="clear_tag">Clear Tags</string>
+    <string name="tag_search">Tagged Searchs</string>
+    <string name="button">Edit</string>
+    <string name="edit">Edit</string>
+</resources>
